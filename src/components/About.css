@@ -1,0 +1,121 @@
+.about {
+    min-height: auto;
+    padding: 120px 8%;
+    background: var(--bg-secondary);
+}
+
+.about-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+}
+
+/* About Text */
+
+.section-subtitle {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    color: var(--accent);
+}
+
+.about-content > p:not(.section-subtitle) {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+/* Highlight Cards */
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.about-card svg {
+    color: var(--accent);
+    margin-bottom: 18px;
+}
+
+.about-card h3 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.about-card h4 {
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+.about-card p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* Make the third card span both columns */
+
+.about-card:last-child {
+    grid-column: 1 / -1;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-highlights {
+        max-width: 600px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    .about {
+        padding: 90px 6%;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card:last-child {
+        grid-column: auto;
+    }
+}

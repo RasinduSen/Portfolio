@@ -1,5 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
 import './App.css'
 
 function App() {
@@ -10,21 +13,15 @@ function App() {
       <main>
         <Hero />
 
-        <section id="about">
-          <h1>About</h1>
-        </section>
+        <About />
 
-        <section id="skills">
-          <h1>Skills</h1>
-        </section>
+        <Skills />
 
         <section id="projects">
           <h1>Projects</h1>
         </section>
 
-        <section id="contact">
-          <h1>Contact</h1>
-        </section>
+        <Contact />
       </main>
     </div>
   )
