@@ -1,6 +1,5 @@
-
 import './Hero.css'
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, Download } from 'lucide-react'
 import profilePic from '../assets/profile.jpg'
 
 function Hero() {
@@ -24,6 +23,15 @@ function Hero() {
                 <div className="hero-buttons">
                     <a href="#projects" className="btn-primary">
                         View My Projects <ArrowDown size={18} />
+                    </a>
+
+                    <a
+                        href="https://drive.google.com/file/d/1Z3qxMgpnowWRaN87DGNUrxVL7ptMmafu/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-secondary"
+                    >
+                        Download CV <Download size={18} />
                     </a>
 
                     <a href="#contact" className="btn-secondary">
