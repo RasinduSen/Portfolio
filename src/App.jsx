@@ -3,6 +3,8 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import Projects from './components/Projects'
+import BackToTop from './components/BackToTop'
 import './App.css'
 
 function App() {
@@ -17,11 +19,11 @@ function App() {
 
         <Skills />
 
-        <section id="projects">
-          <h1>Projects</h1>
-        </section>
+        <Projects />
 
         <Contact />
+
+        <BackToTop />
       </main>
     </div>
   )
